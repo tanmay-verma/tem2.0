@@ -1,0 +1,30 @@
+.history-page {
+  width: 100%;
+  grid-column: 1 / -1;
+  margin-top: var(--mds_space_600, 24px);
+}
+
+.history-page__toolbar {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--mds_space_400, 16px);
+  margin-bottom: var(--mds_space_400, 16px);
+}
+
+.history-page__limit {
+  width: 160px;
+}
+
+/* Filter fields, shown only when the Filters button is toggled on */
+.history-page__filters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  align-items: end;
+  gap: var(--mds_space_400, 16px);
+  margin-bottom: var(--mds_space_600, 24px);
+}
+
+.history-page__count {
+  margin: 0 0 var(--mds_space_200, 8px);
+}

@@ -1,0 +1,45 @@
+.jobs-page {
+  width: 100%;
+  grid-column: 1 / -1;
+  margin-top: var(--mds_space_600, 24px);
+}
+
+/* Desktop: wider form */
+@media only screen and (min-width: 1025px) {
+  .jobs-page {
+    max-width: 100%;
+  }
+}
+
+.jobs-page__notification {
+  display: block;
+  margin-top: var(--mds_space_400, 16px);
+}
+
+.jobs-page__grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--mds_space_800, 40px);
+}
+
+/* Desktop (md): 12 columns */
+@media only screen and (min-width: 1025px) {
+  .jobs-page__grid {
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-flow: dense;
+  }
+}
+
+/* Tablet (sm): 6 columns */
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+  .jobs-page__grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+/* Mobile (xs): 2 columns */
+@media only screen and (max-width: 640px) {
+  .jobs-page__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
